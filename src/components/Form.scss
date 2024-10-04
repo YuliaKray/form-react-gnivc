@@ -1,0 +1,84 @@
+.forms {
+    margin: 0 auto;
+    max-width: 697px;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 26px;
+    text-align: left;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+
+    &__input {
+        width: 100%;
+        box-sizing: border-box;
+        height: 67px;
+        background-color: #F0F0F0;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 20px;
+        padding-left: 21px;
+        padding-right: 26px;
+    }
+
+    &__input[placeholder='Фамилия'] {
+        margin-top: 0;
+    }
+
+    &__input_invalid {
+        border: 1px solid red;
+    }
+
+    &__conteiner {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, calc((100% - 31px)/2));
+        grid-template-rows: repeat(2, auto);
+        column-gap: 31px;
+    }
+
+    &__select {
+        max-width: 333px;
+    }
+
+    &__select,
+    &__input[type='tel'] {
+        margin-right: 31px;
+    }
+
+    &__error {
+        display: none;
+        align-self: flex-start;
+        color: red;
+    }
+
+    &__error_visible {
+        display: block;
+    }
+
+    &__wrapper {
+        max-width: 333px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__button {
+        width: 333px;
+        height: 66px;
+        cursor: pointer;
+        color: #F0F0F0;
+        background-color: #44B766;
+        border: none;
+        border-radius: 5px;
+        font-size: 20px;
+        margin-top: 20px;
+
+    }
+}
